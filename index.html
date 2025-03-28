@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        /* Общие стили */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Стили для заголовка */
+        h1 {
+            color: #00ff00;
+            font-size: 72px;
+            letter-spacing: 2px;
+            animation: typing 3s steps(12) forwards;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid #00ff00;
+            box-sizing: border-box;
+            width: 15ch;
+        }
+
+        /* Анимация эффекта печати */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 15ch;
+            }
+        }
+
+        /* Стили для кнопок */
+        .button {
+            position: absolute;
+            padding: 12px 24px;
+            background-color: #39AEEB; /* Цвет кнопки Telegram */
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #307192; /* Цвет кнопки при наведении */
+        }
+
+        .button:focus {
+            outline: none;
+        }
+
+        /* Позиционирование кнопок */
+        .telegram-button {
+            top: 24px;
+            right: 24px;
+        }
+
+        .source-code-button {
+            bottom: 24px;
+            left: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <a href="#" class="button telegram-button">Мы в Telegram</a>
+    <a href="#" class="button source-code-button">Source Code</a>
+</body>
+</html>
