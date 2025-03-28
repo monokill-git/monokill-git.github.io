@@ -3,80 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>RsvxTeam</title>
     <style>
         /* Общие стили */
-        body, html {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
+            font-family: monospace;
+            background-color: black;
+            color: limegreen;
+        }
+
+        /* Контейнер для кнопок */
+        .buttons-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #111;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Стили для заголовка */
-        h1 {
-            color: #00ff00;
-            font-size: 72px;
-            letter-spacing: 2px;
-            animation: typing 3s steps(12) forwards;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 4px solid #00ff00;
-            box-sizing: border-box;
-            width: 15ch;
-        }
-
-        /* Анимация эффекта печати */
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-            to {
-                width: 15ch;
-            }
+            height: 100vh;
         }
 
         /* Стили для кнопок */
         .button {
-            position: absolute;
-            padding: 12px 24px;
-            background-color: #39AEEB; /* Цвет кнопки Telegram */
-            color: white;
+            padding: 16px 32px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: limegreen;
             font-weight: bold;
-            font-size: 14px;
-            border-radius: 5px;
-            border: none;
+            font-size: 18px;
+            border: 1px solid limegreen;
+            border-radius: 4px;
+            margin: 0 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
         .button:hover {
-            background-color: #307192; /* Цвет кнопки при наведении */
-        }
-
-        .button:focus {
-            outline: none;
-        }
-
-        /* Позиционирование кнопок */
-        .telegram-button {
-            top: 24px;
-            right: 24px;
-        }
-
-        .source-code-button {
-            bottom: 24px;
-            left: 24px;
+            background-color: rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <a href="https://t.me/domikrsvx" class="button telegram-button">Мы в Telegram</a>
-    <a href="https://github.com/monokill-git/monokill-git.github.io" class="button source-code-button">Source Code</a>
+    <div class="buttons-container">
+        <a href="hello.html" class="button">Hello World</a>
+        <a href="https://t.me/domikrsvx" class="button">We on Telegram</a>
+        <a href="https://github.com/monokill-git/monokill-git.github.io/tree/main" class="button">Source Code</a>
+    </div>
 </body>
 </html>
